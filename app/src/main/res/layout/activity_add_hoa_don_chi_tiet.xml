@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".addHoaDonChiTiet"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/edMaHoaDon1" android:hint="Mã Hóa Đơn"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/edMaSach1" android:hint="Mã sách"/>
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/edSoLuongMua1"
+        android:inputType="number"
+        android:hint="Số Lượng" />
+
+
+    -<LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:weightSum="2">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:onClick="ADDHoaDonCHITIET"
+        android:text="Thêm" />
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:onClick="thanhToanHoaDon" android:text="Thanh Toán" android:layout_weight="1"/>
+
+</LinearLayout>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/tvThanhTien" android:text="Thành tiền:" android:textStyle="bold" android:textSize="36px" android:textColor="@color/colorPrimaryDark"/>
+
+    <ListView android:layout_height="match_parent" android:layout_width="match_parent" android:id="@+id/lvCart" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+
+</LinearLayout>

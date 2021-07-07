@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".addHoaDon"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/edMaHoaDon" android:hint="Mã hoá đơn"/>
+
+
+    <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" android:weightSum="5">
+
+    <EditText android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/edNgayMua"
+        android:hint="DD-MM-YYYY" android:textSize="18dp"
+        android:layout_weight="4"/>
+
+    <Button android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/picDate"
+        android:layout_weight="1"
+        android:onClick="datePicker" android:text="Chọn"/>
+
+</LinearLayout>
+
+    <Button android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/btnADDHoaDon" android:onClick="ADDHoaDon" android:text="Chọn"/>
+<ListView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/lvHoaDon"/>
+</LinearLayout>

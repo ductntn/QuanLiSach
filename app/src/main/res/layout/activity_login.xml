@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_height="match_parent" android:layout_width="match_parent" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp" android:orientation="vertical">
+
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content" android:src="@drawable/logo" android:layout_gravity="center"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="admin" android:hint="Ten dang nhap" android:id="@+id/edUserName"/>
+
+    <EditText android:layout_height="wrap_content" android:layout_width="match_parent" android:text="admin" android:hint="Mat khau" android:id="@+id/edPassword" android:inputType="textPassword"/>
+
+    <CheckBox android:layout_height="wrap_content" android:layout_width="match_parent" android:text="Luu mat khau" android:id="@+id/chkRememberPass"/>
+
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="horizontal" android:layout_marginTop="20dp">
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Dang Nhap" android:id="@+id/btnLogin" android:onClick="checkLogin"/>
+
+    <Button android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Huy" android:id="@+id/btnCancel"/>
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>
